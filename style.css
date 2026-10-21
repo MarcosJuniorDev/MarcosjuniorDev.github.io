@@ -518,10 +518,9 @@ a {
 
 /* --- Sobre Mim Grid --- */
 .about-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 28px;
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .about-card.main-bio {
@@ -565,18 +564,19 @@ a {
 }
 
 .about-highlights-col {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .highlight-item {
   background: var(--gradient-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 22px;
+  padding: 24px;
   display: flex;
-  gap: 18px;
+  flex-direction: column;
+  gap: 16px;
   align-items: flex-start;
   transition: all var(--transition-fast);
 }
@@ -629,7 +629,7 @@ a {
 /* --- Skills Matrix --- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
 
@@ -1357,7 +1357,7 @@ a {
 
 /* --- Responsividade & Media Queries --- */
 @media (max-width: 900px) {
-  .about-grid {
+  .about-highlights-col {
     grid-template-columns: 1fr;
   }
   
@@ -1375,6 +1375,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
   .navbar {
     height: 64px;
   }
