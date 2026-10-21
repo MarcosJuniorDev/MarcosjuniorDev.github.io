@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcos Junior Oliveira | Desenvolvedor Java & Especialista em Infraestrutura</title>
+  <meta name="description" content="Portfólio e Currículo de Marcos Junior Oliveira. Desenvolvedor Java Back-End (Spring Boot, APIs REST, SQL) e Especialista em Infraestrutura / SysAdmin (Proxmox, Docker, Linux, Zabbix)." />
+  <meta name="keywords" content="Marcos Junior Oliveira, Desenvolvedor Java, Spring Boot, Backend, Infraestrutura, Proxmox, Docker, Linux, Zabbix, SysAdmin, Curitiba" />
+  <meta name="author" content="Marcos Junior Oliveira" />
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marcos Junior Oliveira | Portfólio & CV" />
+  <meta property="og:description" content="Desenvolvedor Java Back-End & Infraestrutura/SysAdmin. Soluções robustas, escaláveis e de alta disponibilidade." />
+  
+  <!-- Favicon com SVG moderno -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23111319'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='42' fill='%23e2e8f0'>MJ</text></svg>" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- Header / Barra de Navegação -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand">
+        <span class="brand-badge">MJ</span>
+        <span class="brand-name">Marcos Junior<span class="accent-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#sobre" class="nav-item">Sobre</a>
+        <a href="#habilidades" class="nav-item">Habilidades</a>
+        <a href="#experiencia" class="nav-item">Experiência</a>
+        <a href="#projetos" class="nav-item">Projetos</a>
+        <a href="#curriculos" class="nav-item">Currículos</a>
+        <a href="#contato" class="nav-btn-contato">Contato</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação">
+        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      
+      <!-- Status Badge -->
+      <div class="hero-status">
+        <span class="status-pulse"></span>
+        <span class="status-text">Disponível para novos desafios e contratação</span>
+      </div>
+
+      <!-- Hero Header -->
+      <h1 class="hero-title">
+        Engenharia de Software <span class="gradient-text">&</span><br />
+        Infraestrutura de Alto Desempenho
+      </h1>
+
+      <p class="hero-subtitle">
+        Olá! Sou <strong>Marcos Junior Oliveira</strong>, profissional de tecnologia baseado em <strong>Curitiba – PR</strong>. 
+        Uno a precisão do desenvolvimento <strong>Java & Spring Boot</strong> com a robustez da administração de 
+        <strong>Sistemas Linux, Virtualização Proxmox e Containers Docker</strong>.
+      </p>
+
+      <!-- Profile Selector (Interactive Filter) -->
+      <div class="profile-switcher-wrapper">
+        <span class="switcher-label">Filtrar visão do portfólio:</span>
+        <div class="profile-switcher" role="tablist">
+          <button class="switcher-btn active" data-filter="all" role="tab" aria-selected="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+            Visão Completa
+          </button>
+          <button class="switcher-btn" data-filter="backend" role="tab" aria-selected="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            Java Back-End
+          </button>
+          <button class="switcher-btn" data-filter="infra" role="tab" aria-selected="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            Infra & DevOps
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Actions / CTAs -->
+      <div class="hero-actions">
+        <a href="#curriculos" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Baixar Currículo
+        </a>
+        <a href="#projetos" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Explorar Projetos
+        </a>
+        <a href="#contato" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Falar Comigo
+        </a>
+      </div>
+
+      <!-- Quick Metrics Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">CBMPR</div>
+          <div class="metric-desc">Atuação ativa em TIC & Infraestrutura Crítica</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Java + Spring</div>
+          <div class="metric-desc">Arquitetura Limpa, APIs RESTful & Multithreading</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Proxmox & Docker</div>
+          <div class="metric-desc">Virtualização, Containers e Alta Disponibilidade</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Curitiba – PR</div>
+          <div class="metric-desc">Disponível para modelo Híbrido, Presencial ou Remoto</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Perfil Profissional</span>
+        <h2 class="section-title">A união entre Código e Infraestrutura</h2>
+        <p class="section-desc">Entenda como minha formação e atuação prática geram valor em todo o ciclo de vida do software.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-bio">
+          <div class="bio-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <h3>Visão Holística: Do Back-End ao Servidor</h3>
+          <p>
+            Sou graduado como <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong> (Unopar) e atuo atualmente no 
+            <strong>Corpo de Bombeiros Militar do Paraná (CBMPR)</strong>, integrando a Diretoria de Atividades Técnicas.
+          </p>
+          <p>
+            Essa vivência me proporcionou domínio prático sobre <strong>virtualização (Proxmox), monitoramento com Zabbix, containers Docker, 
+            automação de deploys e sistemas operacionais Linux/Windows</strong>.
+          </p>
+          <p>
+            Paralelamente, aplico essa base sistêmica no desenvolvimento <strong>Back-End com Java (8/11/17) e Spring Boot</strong>. 
+            Escrevo código limpo (Clean Code), estruturo APIs RESTful escaláveis e projeto soluções desktop e web já preparadas para 
+            facilidade de deploy, consumo de recursos otimizado e monitoramento proativo.
+          </p>
+        </div>
+
+        <div class="about-highlights-col">
+          <div class="highlight-item" data-category="backend">
+            <div class="highlight-icon backend-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <div>
+              <h4>Foco em Engenharia Back-End</h4>
+              <p>Domínio de Programação Orientada a Objetos, concorrência/multithreading, bancos relacionais SQL, arquitetura limpa e testes.</p>
+            </div>
+          </div>
+
+          <div class="highlight-item" data-category="infra">
+            <div class="highlight-icon infra-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <div>
+              <h4>Infraestrutura & SysAdmin</h4>
+              <p>Experiência real em servidores Proxmox, criação de ISOs padronizadas corporativas, monitoramento de redes e servidores com Zabbix.</p>
+            </div>
+          </div>
+
+          <div class="highlight-item" data-category="all">
+            <div class="highlight-icon soft-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div>
+              <h4>Comunicação & Resolução de Problemas</h4>
+              <p>Histórico comprovado em coordenação técnica de equipes, suporte N2/N3 com premiações por desempenho na Vivensis e facilidade para resolução de incidentes críticos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades Técnicas (Skills Matrix) -->
+  <section class="section section-darker" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Stack Tecnológica</span>
+        <h2 class="section-title">Habilidades & Especialidades</h2>
+        <p class="section-desc">Tecnologias, linguagens e ferramentas aplicadas na prática em produção e projetos de engenharia.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Bloco Java & Back-End -->
+        <div class="skill-group-card" data-category="backend">
+          <div class="skill-group-header">
+            <span class="skill-category-badge badge-backend">Back-End & Código</span>
+            <h3>Desenvolvimento Java</h3>
+          </div>
+          <p class="skill-group-desc">Desenvolvimento de aplicações sólidas, com forte controle de memória, concorrência e padrões de projeto.</p>
+          <div class="tags-container">
+            <span class="tech-tag highlight-tag">Java (8 / 11 / 17)</span>
+            <span class="tech-tag highlight-tag">Spring Boot</span>
+            <span class="tech-tag">APIs RESTful</span>
+            <span class="tech-tag">SQL & Relational DBs</span>
+            <span class="tech-tag">Clean Architecture</span>
+            <span class="tech-tag">Clean Code</span>
+            <span class="tech-tag">Multithreading & Concorrência</span>
+            <span class="tech-tag">Java Swing & JNA</span>
+            <span class="tech-tag">HttpClient & Gson</span>
+            <span class="tech-tag">Maven</span>
+          </div>
+        </div>
+
+        <!-- Bloco Infraestrutura & Virtualização -->
+        <div class="skill-group-card" data-category="infra">
+          <div class="skill-group-header">
+            <span class="skill-category-badge badge-infra">Infra & Virtualização</span>
+            <h3>Ambientes & Servidores</h3>
+          </div>
+          <p class="skill-group-desc">Administração de servidores, particionamento de recursos, orquestração e alta disponibilidade.</p>
+          <div class="tags-container">
+            <span class="tech-tag highlight-tag">Proxmox VE (KVM / LXC)</span>
+            <span class="tech-tag highlight-tag">Docker & Containers</span>
+            <span class="tech-tag">Linux (Debian / Ubuntu / RHEL)</span>
+            <span class="tech-tag">Windows Server</span>
+            <span class="tech-tag">Virtualização de Redes</span>
+            <span class="tech-tag">Padronização de ISOs</span>
+            <span class="tech-tag">Bash Scripting</span>
+            <span class="tech-tag">PowerShell</span>
+            <span class="tech-tag">Servidores Locais & Cloud Privada</span>
+          </div>
+        </div>
+
+        <!-- Bloco Monitoramento & Redes -->
+        <div class="skill-group-card" data-category="infra">
+          <div class="skill-group-header">
+            <span class="skill-category-badge badge-infra">Observabilidade</span>
+            <h3>Monitoramento & Redes</h3>
+          </div>
+          <p class="skill-group-desc">Acompanhamento proativo de métricas, diagnóstico de tráfego e resposta a incidentes.</p>
+          <div class="tags-container">
+            <span class="tech-tag highlight-tag">Zabbix Monitoring</span>
+            <span class="tech-tag">Agentes & SNMP</span>
+            <span class="tech-tag">Alertas Proativos</span>
+            <span class="tech-tag">Redes de Computadores</span>
+            <span class="tech-tag">Firewall & Roteamento</span>
+            <span class="tech-tag">Diagnóstico de Conectividade</span>
+            <span class="tech-tag">Segurança da Informação</span>
+          </div>
+        </div>
+
+        <!-- Bloco Ferramentas & Metodologia -->
+        <div class="skill-group-card" data-category="all">
+          <div class="skill-group-header">
+            <span class="skill-category-badge badge-neutral">Workflow & Ferramentas</span>
+            <h3>Engenharia & Colaboração</h3>
+          </div>
+          <p class="skill-group-desc">Processos ágeis, versionamento estrito e resolução analítica de problemas.</p>
+          <div class="tags-container">
+            <span class="tech-tag highlight-tag">Git & GitHub</span>
+            <span class="tech-tag">IntelliJ IDEA</span>
+            <span class="tech-tag">VS Code</span>
+            <span class="tech-tag">Postman / Insomnia</span>
+            <span class="tech-tag">Helpdesk N2 / N3</span>
+            <span class="tech-tag">Liderança Técnica</span>
+            <span class="tech-tag">Trabalho em Equipe</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiência Profissional -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trajetória</span>
+        <h2 class="section-title">Experiência Profissional</h2>
+        <p class="section-desc">Atuação em ambientes operacionais críticos e suporte técnico avançado.</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Experiência 1: CBMPR -->
+        <div class="timeline-item" data-category="all">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-role">Residente Técnico em TIC & Infraestrutura</span>
+              <span class="timeline-badge current-badge">2025 – Presente</span>
+            </div>
+            <div class="timeline-company">
+              <strong>Corpo de Bombeiros Militar do Paraná (CBMPR)</strong> • Curitiba, PR
+              <span class="sub-location">Diretoria de Atividades Técnicas (DAT)</span>
+            </div>
+            <p class="timeline-description">
+              Atuação direta na gestão, sustentação e modernização da infraestrutura de tecnologia e segurança da informação, aplicando automação e boas práticas de engenharia:
+            </p>
+            <ul class="timeline-bullets">
+              <li><strong>Virtualização & Cloud Privada:</strong> Gestão de ambientes virtualizados em Proxmox VE, provisionando e mantendo máquinas virtuais e servidores locais com foco em alta disponibilidade e segurança.</li>
+              <li><strong>Padronização de Imagens Corporativas:</strong> Desenvolvimento e implementação de imagens customizadas (ISOs padronizadas) Linux e Windows para automação de setup em postos operacionais.</li>
+              <li><strong>Automação & Scripts:</strong> Automação de tarefas de rotina, scripts Bash/PowerShell para manutenção, auditoria e implantação de softwares open source.</li>
+              <li><strong>Coordenação & Liderança:</strong> Coordenação de gestores de TIC nas unidades regionais do estado e suporte técnico helpdesk N2/N3 de missão crítica.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill-tag">Proxmox VE</span>
+              <span class="pill-tag">Linux / Debian</span>
+              <span class="pill-tag">Windows Server</span>
+              <span class="pill-tag">Zabbix</span>
+              <span class="pill-tag">Docker</span>
+              <span class="pill-tag">Scripts Bash/PowerShell</span>
+              <span class="pill-tag">Segurança de Redes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiência 2: Vivensis -->
+        <div class="timeline-item" data-category="all">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-role">Analista de Suporte Técnico N2 / N3</span>
+              <span class="timeline-badge">2023 – 2024</span>
+            </div>
+            <div class="timeline-company">
+              <strong>Vivensis Tecnologia</strong> • Curitiba, PR
+            </div>
+            <p class="timeline-description">
+              Suporte técnico especializado com atendimento a técnicos credenciados de campo e clientes corporativos/finais:
+            </p>
+            <ul class="timeline-bullets">
+              <li>Diagnóstico avançado e resolução de problemas de sinal, telecomunicações, conectividade e firmware de aparelhos receptores.</li>
+              <li>Configuração, recuperação, reset de fábrica e correções de software em produtos baseados em Android TV.</li>
+              <li>Participação ativa no processo de P&D para homologação de novos produtos da marca, com testes integrados de hardware e software.</li>
+              <li><strong>Reconhecimento:</strong> Premiações consecutivas por superação de metas de produtividade, SLA e qualidade técnica.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill-tag">Suporte N2/N3</span>
+              <span class="pill-tag">Android TV & Firmware</span>
+              <span class="pill-tag">Diagnóstico de Telecom</span>
+              <span class="pill-tag">Homologação de Hardware/Software</span>
+              <span class="pill-tag">Premiação por Desempenho</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos em Destaque -->
+  <section class="section section-darker" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfólio Prático</span>
+        <h2 class="section-title">Projetos & Implementações</h2>
+        <p class="section-desc">Projetos de software back-end e arquitetura de infraestrutura com desafios reais de engenharia.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Projeto 1: MEMOIR (Java Back-End / Desktop) -->
+        <div class="project-card" data-category="backend">
+          <div class="project-card-header">
+            <div class="project-type-tag badge-backend">Java Back-End / Desktop</div>
+            <span class="project-status">Projeto Ativo</span>
+          </div>
+          <h3 class="project-title">MEMOIR – Catálogo de Jogos & Engine Desktop</h3>
+          <p class="project-summary">
+            Aplicação desktop multiplataforma (Windows e Linux) desenvolvida com foco estrito em <strong>Clean Architecture</strong>, 
+            alta performance e resiliência em operações assíncronas.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-point">
+              <strong>Integração com APIs RESTful:</strong> Comunicação nativa via <code>HttpClient</code> e serialização/desserialização de payloads complexos utilizando <code>Gson</code>.
+            </div>
+            <div class="highlight-point">
+              <strong>Concorrência & Mitigação de Deadlocks:</strong> Resolução de desafios de multithreading no Windows, isolando recursos nativos do SO (<code>SystemTray</code> e bibliotecas <code>JNA</code>) da Event Dispatch Thread (EDT) do Swing.
+            </div>
+            <div class="highlight-point">
+              <strong>Persistência Nativa:</strong> Armazenamento seguro de cache de mídia e dados em conformidade com as especificações de diretórios nativos de cada SO via <code>appdirs</code>.
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tags-container">
+              <span class="tech-tag">Java 17</span>
+              <span class="tech-tag">Swing / EDT</span>
+              <span class="tech-tag">JNA</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">HttpClient</span>
+              <span class="tech-tag">Gson</span>
+              <span class="tech-tag">Maven</span>
+              <span class="tech-tag">Clean Architecture</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MarcosjuniorDev" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Ver Repositório
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2: APIs RESTful com Spring Boot & Docker -->
+        <div class="project-card" data-category="backend">
+          <div class="project-card-header">
+            <div class="project-type-tag badge-backend">Spring Boot & Cloud</div>
+            <span class="project-status">Back-End Moderno</span>
+          </div>
+          <h3 class="project-title">APIs RESTful com Spring Boot, JPA & PostgreSQL</h3>
+          <p class="project-summary">
+            Desenvolvimento de microsserviços e APIs corporativas seguindo padrões REST, arquitetura em camadas (Controller, Service, Repository) 
+            e deploy conteinerizado.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-point">
+              <strong>Persistência & Modelagem Relacional:</strong> Mapeamento objeto-relacional com Hibernate/JPA, consultas otimizadas e integridade de dados SQL.
+            </div>
+            <div class="highlight-point">
+              <strong>Arquitetura & Boas Práticas:</strong> Tratamento centralizado de exceções (ControllerAdvice), DTOs com Bean Validation e documentação OpenAPI.
+            </div>
+            <div class="highlight-point">
+              <strong>Deploy & Containers:</strong> Empacotamento em imagens Docker multi-stage e orquestração de banco de dados via Docker Compose.
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tags-container">
+              <span class="tech-tag">Java 17</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Spring Data JPA</span>
+              <span class="tech-tag">PostgreSQL / SQL</span>
+              <span class="tech-tag">Docker Compose</span>
+              <span class="tech-tag">Postman</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MarcosjuniorDev" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Ver Repositório
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2: Automação e ISOs Padronizadas (Infra) -->
+        <div class="project-card" data-category="infra">
+          <div class="project-card-header">
+            <div class="project-type-tag badge-infra">Automação & SysAdmin</div>
+            <span class="project-status">Em Produção (CBMPR)</span>
+          </div>
+          <h3 class="project-title">Padronização de Imagens & Automação de Deploys</h3>
+          <p class="project-summary">
+            Solução para padronização de estações operacionais e servidores no Corpo de Bombeiros Militar do Paraná, eliminando 
+            incompatibilidades e acelerando o provisionamento em novas unidades.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-point">
+              <strong>Geração de ISOs Customizadas:</strong> Criação de imagens customizadas Linux e Windows prontas com requisitos de segurança e certificados digitais integrados.
+            </div>
+            <div class="highlight-point">
+              <strong>Scripts de Provisionamento:</strong> Redução drástica do tempo de configuração de máquinas de horas para minutos através de scripts automatizados.
+            </div>
+            <div class="highlight-point">
+              <strong>Softwares Open Source:</strong> Implantação e gerenciamento de ferramentas corporativas livres com alta estabilidade.
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tags-container">
+              <span class="tech-tag">Linux Debian</span>
+              <span class="tech-tag">Windows Imaging</span>
+              <span class="tech-tag">Bash Scripts</span>
+              <span class="tech-tag">SysAdmin</span>
+              <span class="tech-tag">Hardening</span>
+              <span class="tech-tag">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3: Ambiente Virtualizado Proxmox & Docker -->
+        <div class="project-card" data-category="infra">
+          <div class="project-card-header">
+            <div class="project-type-tag badge-infra">Virtualização & Cloud</div>
+            <span class="project-status">Sustentação</span>
+          </div>
+          <h3 class="project-title">Cluster de Virtualização Proxmox VE & Containers Docker</h3>
+          <p class="project-summary">
+            Planejamento, dimensionamento e operação de ambiente de virtualização com hipervisor Proxmox para hospedar serviços 
+            críticos, bancos de dados e aplicações internas.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-point">
+              <strong>Isolamento e Recursos:</strong> Alocação dinâmica de CPU/RAM, criação de pontes virtuais (bridges VLAN) e particionamento de redes para segurança perimetral.
+            </div>
+            <div class="highlight-point">
+              <strong>Containers Docker & LXC:</strong> Deploys leves e isolamento de microsserviços com volumes persistentes.
+            </div>
+            <div class="highlight-point">
+              <strong>Rotinas de Backup & Snapshot:</strong> Políticas de recuperação rápida contra falhas de hardware ou software.
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tags-container">
+              <span class="tech-tag">Proxmox VE</span>
+              <span class="tech-tag">KVM / QEMU</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">LXC</span>
+              <span class="tech-tag">VLANs</span>
+              <span class="tech-tag">Backups Proxmox</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 4: Monitoramento Proativo com Zabbix -->
+        <div class="project-card" data-category="infra">
+          <div class="project-card-header">
+            <div class="project-type-tag badge-infra">Observabilidade</div>
+            <span class="project-status">Monitoramento 24/7</span>
+          </div>
+          <h3 class="project-title">Central de Observabilidade & Monitoramento Zabbix</h3>
+          <p class="project-summary">
+            Implementação de infraestrutura de monitoramento contínuo para visualização em tempo real de integridade, 
+            tráfego de rede e consumo de hardware dos servidores.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-point">
+              <strong>Dashboards & Gatilhos Inteligentes:</strong> Configuração de alertas que antecipam esgotamento de disco, quedas de link e sobrecarga de CPU.
+            </div>
+            <div class="highlight-point">
+              <strong>Monitoramento por Agentes & SNMP:</strong> Coleta unificada de métricas em servidores Linux, Windows e switches gerenciáveis.
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tags-container">
+              <span class="tech-tag">Zabbix Server</span>
+              <span class="tech-tag">Zabbix Agent</span>
+              <span class="tech-tag">SNMP</span>
+              <span class="tech-tag">SLA / Métricas</span>
+              <span class="tech-tag">Alertas Automáticos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Formação & Certificações -->
+  <section class="section" id="formacao">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Educação Contínua</span>
+        <h2 class="section-title">Formação Acadêmica & Cursos</h2>
+        <p class="section-desc">Fundamentos sólidos em ciência da computação somados a cursos práticos de mercado.</p>
+      </div>
+
+      <div class="edu-grid">
+        
+        <!-- Faculdade -->
+        <div class="edu-card main-degree">
+          <div class="edu-badge">Graduação Tecnológica</div>
+          <h3 class="edu-title">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+          <div class="edu-institution">Unopar • Concluído em 2021</div>
+          <p class="edu-desc">
+            Formação com foco prático em desenvolvimento de software e infraestrutura de TI.
+          </p>
+          <div class="edu-topics">
+            <span class="topic-item">Programação Orientada a Objetos</span>
+            <span class="topic-item">Banco de Dados SQL</span>
+            <span class="topic-item">Estruturas de Dados</span>
+            <span class="topic-item">Desenvolvimento de APIs REST</span>
+            <span class="topic-item">Redes de Computadores</span>
+            <span class="topic-item">Sistemas Operacionais</span>
+            <span class="topic-item">Segurança da Informação</span>
+          </div>
+        </div>
+
+        <!-- Cursos Especializados -->
+        <div class="edu-card">
+          <div class="edu-badge badge-courses">Cursos Especializados</div>
+          <h3 class="edu-title">Certificações & Aperfeiçoamento</h3>
+          <p class="edu-desc">Treinamentos aprofundados com foco em código limpo, arquitetura e infraestrutura moderna:</p>
+          
+          <div class="course-list">
+            <div class="course-item">
+              <div class="course-bullet">☕</div>
+              <div>
+                <strong>Java Completo & Programação Orientada a Objetos</strong>
+                <span class="course-author">Instrutor: Nelio Alves</span>
+              </div>
+            </div>
+            <div class="course-item">
+              <div class="course-bullet">🐳</div>
+              <div>
+                <strong>Docker: Ferramentas e Containers na Prática</strong>
+                <span class="course-author">Instrutor: Eduardo Pires</span>
+              </div>
+            </div>
+            <div class="course-item">
+              <div class="course-bullet">📊</div>
+              <div>
+                <strong>Zabbix: Application and Network Monitoring</strong>
+                <span class="course-author">Instrutor: Sean Bradley</span>
+              </div>
+            </div>
+            <div class="course-item">
+              <div class="course-bullet">⚡</div>
+              <div>
+                <strong>C# Completo & POO</strong>
+                <span class="course-author">Instrutor: Nelio Alves</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Download de Currículos -->
+  <section class="section section-darker" id="curriculos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Downloads Diretos</span>
+        <h2 class="section-title">Baixe os Currículos em PDF</h2>
+        <p class="section-desc">Selecione o currículo de acordo com o perfil da vaga que você está recrutando.</p>
+      </div>
+
+      <div class="cv-download-grid">
+        
+        <!-- CV Java -->
+        <div class="cv-card" data-category="backend">
+          <div class="cv-icon-wrapper cv-java-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+          </div>
+          <div class="cv-details">
+            <span class="cv-badge badge-backend">Perfil Back-End</span>
+            <h3>Currículo: Desenvolvedor Java</h3>
+            <p>Focado em Java (8/11/17), Spring Boot, APIs RESTful, SQL, Clean Code e integração de sistemas.</p>
+          </div>
+          <div class="cv-actions">
+            <a href="CurriculoMarcosAttJava.pdf" download="Curriculo_Marcos_Junior_Java.pdf" class="btn btn-primary btn-block">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Baixar PDF (Java)
+            </a>
+            <a href="CurriculoMarcosAttJava.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">
+              Visualizar no Navegador
+            </a>
+          </div>
+        </div>
+
+        <!-- CV Infraestrutura -->
+        <div class="cv-card" data-category="infra">
+          <div class="cv-icon-wrapper cv-infra-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <div class="cv-details">
+            <span class="cv-badge badge-infra">Perfil SysAdmin & DevOps</span>
+            <h3>Currículo: Analista de Infraestrutura</h3>
+            <p>Focado em Proxmox VE, Docker, Monitoramento Zabbix, Servidores Linux/Windows, Redes e Automação.</p>
+          </div>
+          <div class="cv-actions">
+            <a href="Curriculo_Marcos_Oliveira_Infraestrutura.pdf" download="Curriculo_Marcos_Oliveira_Infraestrutura.pdf" class="btn btn-primary btn-block">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Baixar PDF (Infraestrutura)
+            </a>
+            <a href="Curriculo_Marcos_Oliveira_Infraestrutura.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">
+              Visualizar no Navegador
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Direto -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-content">
+          <span class="section-tag">Vamos Conversar?</span>
+          <h2 class="contact-title">Pronto para somar na sua equipe técnica</h2>
+          <p class="contact-desc">
+            Estou em <strong>Curitiba – PR</strong> e aberto a oportunidades presenciais, híbridas ou 100% remotas. 
+            Entre em contato por qualquer um dos canais abaixo:
+          </p>
+
+          <div class="contact-channels">
+            
+            <!-- Email -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-title">E-mail Profissional</span>
+                <span class="channel-value" id="emailVal">marcosjoliveiradev@proton.me</span>
+              </div>
+              <button class="channel-action-btn copy-btn" data-copy="marcosjoliveiradev@proton.me" title="Copiar e-mail">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copiar</span>
+              </button>
+            </div>
+
+            <!-- Telefone / WhatsApp -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-title">WhatsApp / Telefone</span>
+                <span class="channel-value">(35) 9 9828-3748</span>
+              </div>
+              <a href="https://wa.me/5535998283748?text=Ol%C3%A1%20Marcos,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer" class="channel-action-btn wa-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Chamar</span>
+              </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-title">GitHub</span>
+                <span class="channel-value">github.com/MarcosjuniorDev</span>
+              </div>
+              <a href="https://github.com/MarcosjuniorDev" target="_blank" rel="noopener noreferrer" class="channel-action-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Acessar</span>
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-title">LinkedIn</span>
+                <span class="channel-value">Conecte-se comigo</span>
+              </div>
+              <a href="https://www.linkedin.com/in/marcosjuniordev" target="_blank" rel="noopener noreferrer" class="channel-action-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Conectar</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="brand-name">Marcos Junior Oliveira</span>
+        <p class="footer-tagline">Desenvolvedor Java Back-End & Analista de Infraestrutura</p>
+      </div>
+      <div class="footer-right">
+        <p>© <span id="currentYear">2026</span> • Desenvolvido com HTML5, CSS3 moderno & JavaScript vanilla puro.</p>
+        <p class="footer-note">Hospedável diretamente no <strong>GitHub Pages</strong> sem dependências pesadas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de Notificação (Ex: E-mail copiado) -->
+  <div class="toast" id="toastNotification" role="alert" aria-live="assertive">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastMessage">Texto copiado!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
